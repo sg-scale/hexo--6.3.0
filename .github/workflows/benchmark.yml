@@ -53,7 +53,7 @@ jobs:
           login: ${{ secrets.SURGE_LOGIN }}
           token: ${{ secrets.SURGE_TOKEN }}
       - name: Comment PR
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           message: |
             Publish flamegraph to https://${{ github.sha }}-${{ matrix.node-version }}-hexo.surge.sh/flamegraph.html
